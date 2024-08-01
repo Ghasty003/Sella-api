@@ -19,3 +19,13 @@ model User {
   username String
   password String
 }
+
+model Listing {
+  id          String @id @default(uuid())
+  imageUrl    String
+  title       String
+  category    String
+  price       String
+  description String
+  userId      String
+}
